@@ -1,7 +1,16 @@
 import { INTRO, ABOUT, PROJECTS } from '$lib/constants/constants';
 
-export const getBackgroundColor = (page: string, type = 'primary') => {
-	return `bg-${page}-${type}`;
+export const getBackgroundColor = (page: string, secondary = false) => {
+	switch (page) {
+		case INTRO:
+			return secondary ? `bg-intro-secondary` : `bg-intro-primary`;
+		case ABOUT:
+			return secondary ? `bg-about-secondary` : `bg-about-primary`;
+		case PROJECTS:
+			return secondary ? `bg-projects-secondary` : `bg-projects-primary`;
+		default:
+			return '';
+	}
 };
 
 export const getTextColor = (page: string) => {
