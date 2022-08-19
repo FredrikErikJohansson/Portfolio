@@ -3,6 +3,7 @@ export interface Project {
 	title: string;
 	shortDescription: string;
 	sourceLink: string | undefined;
+	imageSource: string;
 	features: string[];
 	technologies: string[];
 	year: number;
@@ -14,6 +15,7 @@ export const projects: Project[] = [
 		title: "Master's thesis",
 		shortDescription: "Master's thesis project.",
 		sourceLink: 'https://github.com/FredrikErikJohansson/VI-SLAM-UAV',
+		imageSource: '/images/MT.png',
 		features: [],
 		technologies: [],
 		year: 2021
@@ -23,6 +25,7 @@ export const projects: Project[] = [
 		title: 'Chess engine with an integrated AI',
 		shortDescription: 'Chess engine with an integrated AI, written from scratch in C++',
 		sourceLink: 'https://github.com/FredrikErikJohansson/chess-ai',
+		imageSource: '/images/CHESS.png',
 		features: [
 			'Bitboards',
 			'SIMD',
@@ -46,6 +49,7 @@ export const projects: Project[] = [
 		title: 'Proccraft',
 		shortDescription: 'Voxel engine for generation of procedural terrains.',
 		sourceLink: 'https://github.com/FredrikErikJohansson/Proccraft',
+		imageSource: '/images/PROCCRAFT.png',
 		features: [
 			'Batching',
 			'Face culling',
@@ -67,6 +71,7 @@ export const projects: Project[] = [
 		title: 'Cloudmatch',
 		shortDescription: 'Spotify to Soundcloud music recommendation tool.',
 		sourceLink: 'https://github.com/johanforslund/cloudmatch',
+		imageSource: '/images/CLOUDMATCH.png',
 		features: ['KNN', 'Data gathering', 'Scoring algorithm'],
 		technologies: ['Python', 'JavaScript', 'React', 'Flask', 'Spotify API', 'Soundcloud API'],
 		year: 2020
@@ -76,6 +81,7 @@ export const projects: Project[] = [
 		title: 'Face Recognition Software',
 		shortDescription: 'Software which identifies faces using image processing.',
 		sourceLink: 'https://github.com/samuelllsvensson/Face_Recognition',
+		imageSource: '/images/FACE.jpg',
 		features: [
 			'Morphology',
 			'Eigenfaces',
@@ -97,6 +103,7 @@ export const projects: Project[] = [
 		title: 'Monte Carlo Ray Tracer',
 		shortDescription: 'Monte Carlo Ray Tracer implemented in C++.',
 		sourceLink: 'https://github.com/FredrikErikJohansson/Ray-tracer',
+		imageSource: '/images/MCRT.jpg',
 		features: [
 			'Monte Carlo Estimator',
 			'Russian Roulette',
@@ -115,10 +122,10 @@ export const projects: Project[] = [
 	},
 	{
 		id: '7',
-
 		title: 'Metiri',
 		shortDescription: 'Android application to measure distances using ARcore.',
 		sourceLink: undefined,
+		imageSource: '/images/METIRI.jpg',
 		features: [
 			'Real Time Measure',
 			'Store Measurment Data',
@@ -131,10 +138,10 @@ export const projects: Project[] = [
 	},
 	{
 		id: '8',
-
 		title: 'Football Simulator',
 		shortDescription: 'Football Trajectory Simulator with Drag and Magnus effect.',
 		sourceLink: 'https://github.com/FredrikErikJohansson/FootballSim',
+		imageSource: '/images/MOS.jpg',
 		features: ['Drag', 'Gravity', 'Bounce', 'Collision', 'Magnus Effect', 'GUI', 'Object Import'],
 		technologies: ['C++', 'OpenGL', 'MATLAB'],
 		year: 2019
@@ -144,6 +151,7 @@ export const projects: Project[] = [
 		title: 'Bibliuteket',
 		shortDescription: 'Android/iOS application for selling course literature.',
 		sourceLink: 'https://github.com/johanforslund/bibliuteket',
+		imageSource: '/images/BIBLIU.jpg',
 		features: [
 			'Posting',
 			'Searching',
@@ -157,11 +165,10 @@ export const projects: Project[] = [
 	},
 	{
 		id: '10',
-
 		title: 'Amaze',
 		shortDescription: 'Mobile game for Samsung Gear VR, developed in Unreal Engine.',
-
 		sourceLink: 'https://github.com/FredrikErikJohansson/vr-maze',
+		imageSource: '/images/AMAZE.jpg',
 		features: ['VR', 'Animations', 'Puzzles', 'Interactive objects', 'Trigger effects'],
 		technologies: ['Unreal Engine', 'Samsung Gear VR', '3ds Max'],
 		year: 2018

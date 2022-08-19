@@ -13,7 +13,8 @@ module.exports = {
 				'about-primary': '#F4D54C',
 				'about-secondary': '#F5D95D',
 				'projects-primary': '#3D8F5A',
-				'projects-secondary': '#449661'
+				'projects-secondary': '#449661',
+				'projects-bright': '#39CB6C'
 			}
 		}
 	},

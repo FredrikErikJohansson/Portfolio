@@ -6,6 +6,7 @@
 	import Footer from '$lib/Footer.svelte';
 	import Header from '$lib/Header.svelte';
 	import { getTextColor } from '$lib/utility/utility';
+	import Card from '$lib/Card.svelte';
 
 	const projects2021: Project[] = projects.filter((project) => project.year === 2021);
 	const projects2020: Project[] = projects.filter((project) => project.year === 2020);
@@ -25,34 +26,42 @@
 			voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
 			non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
-		<div class="h-6" />
-		<h1 class="text-2xl m-2 font-lato">2021</h1>
-		{#each projects2021 as project}
-			<p>
-				{project.title}
-			</p>
-		{/each}
-		<div class="h-6" />
-		<h1 class="text-2xl m-2 font-lato">2020</h1>
-		{#each projects2020 as project}
-			<p>
-				{project.title}
-			</p>
-		{/each}
-		<div class="h-6" />
-		<h1 class="text-2xl m-2 font-lato">2019</h1>
-		{#each projects2019 as project}
-			<p>
-				{project.title}
-			</p>
-		{/each}
-		<div class="h-6" />
-		<h1 class="text-2xl m-2 font-lato">2018</h1>
-		{#each projects2018 as project}
-			<p>
-				{project.title}
-			</p>
-		{/each}
+		<div class="h-10" />
+		<h1 class="text-4xl font-lato">2021</h1>
+		<div class="flex flex-wrap justify-center">
+			{#each projects2021 as project}
+				<a href={`/projects/${project.id}`}>
+					<Card src={project.imageSource} alt={project.title} />
+				</a>
+			{/each}
+		</div>
+		<div class="h-10" />
+		<h1 class="text-4xl font-lato">2020</h1>
+		<div class="flex flex-wrap justify-center">
+			{#each projects2020 as project}
+				<a href={`/projects/${project.id}`}>
+					<Card src={project.imageSource} alt={project.title} />
+				</a>
+			{/each}
+		</div>
+		<div class="h-10" />
+		<h1 class="text-4xl font-lato">2019</h1>
+		<div class="flex flex-wrap justify-center">
+			{#each projects2019 as project}
+				<a href={`/projects/${project.id}`}>
+					<Card src={project.imageSource} alt={project.title} />
+				</a>
+			{/each}
+		</div>
+		<div class="h-10" />
+		<h1 class="text-4xl font-lato">2018</h1>
+		<div class="flex flex-wrap justify-center">
+			{#each projects2018 as project}
+				<a href={`/projects/${project.id}`}>
+					<Card src={project.imageSource} alt={project.title} />
+				</a>
+			{/each}
+		</div>
 	</div>
 </div>
 
