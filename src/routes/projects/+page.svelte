@@ -8,61 +8,34 @@
 	import { getTextColor } from '$lib/utility/utility';
 	import Card from '$lib/Card.svelte';
 
-	const projects2021: Project[] = projects.filter((project) => project.year === 2021);
-	const projects2020: Project[] = projects.filter((project) => project.year === 2020);
-	const projects2019: Project[] = projects.filter((project) => project.year === 2019);
-	const projects2018: Project[] = projects.filter((project) => project.year === 2018);
+	const projectsSorted: Project[] = projects.sort((a, b) => {
+		if (a.year < b.year) {
+			return 1;
+		}
+		if (a.year > b.year) {
+			return -1;
+		}
+		return 0;
+	});
 </script>
 
-<Header page={PROJECTS} />
-
-<div class={`${getTextColor(PROJECTS)} bg-projects-secondary`}>
-	<div class="text-center container mx-auto py-20 px-20">
-		<h1 class="text-4xl font-lato m-4">Projects</h1>
-		<p class="text-base font-lato">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-			voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-			non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-		<div class="h-10" />
-		<h1 class="text-4xl font-lato">2021</h1>
-		<div class="flex flex-wrap justify-center">
-			{#each projects2021 as project}
-				<a href={`/projects/${project.id}`}>
-					<Card src={project.imageSource} alt={project.title} />
-				</a>
-			{/each}
-		</div>
-		<div class="h-10" />
-		<h1 class="text-4xl font-lato">2020</h1>
-		<div class="flex flex-wrap justify-center">
-			{#each projects2020 as project}
-				<a href={`/projects/${project.id}`}>
-					<Card src={project.imageSource} alt={project.title} />
-				</a>
-			{/each}
-		</div>
-		<div class="h-10" />
-		<h1 class="text-4xl font-lato">2019</h1>
-		<div class="flex flex-wrap justify-center">
-			{#each projects2019 as project}
-				<a href={`/projects/${project.id}`}>
-					<Card src={project.imageSource} alt={project.title} />
-				</a>
-			{/each}
-		</div>
-		<div class="h-10" />
-		<h1 class="text-4xl font-lato">2018</h1>
-		<div class="flex flex-wrap justify-center">
-			{#each projects2018 as project}
-				<a href={`/projects/${project.id}`}>
-					<Card src={project.imageSource} alt={project.title} />
-				</a>
-			{/each}
+<div class="flex flex-col min-h-[100vh]">
+	<Header page={PROJECTS} />
+	<div class={`${getTextColor(PROJECTS)} bg-projects-secondary grow`}>
+		<div class="container mx-auto py-20 px-20">
+			<h1 class="text-4xl font-oswald mb-4">Projects</h1>
+			<p class="text-base font-lato">
+				Here is a list of my academic and personal projects sorted by date.
+			</p>
+			<div class="h-10" />
+			<div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-4 text-center">
+				{#each projectsSorted as project}
+					<a href={`/projects/${project.id}`}>
+						<Card page={PROJECTS} src={project.imageSource} alt={project.title} />
+					</a>
+				{/each}
+			</div>
 		</div>
 	</div>
+	<Footer page={PROJECTS} />
 </div>
-
-<Footer page={PROJECTS} />
