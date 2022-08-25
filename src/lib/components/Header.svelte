@@ -38,11 +38,11 @@
 	>
 		<div class="flex flex-col w-full justify-between container mx-auto z-10">
 			<Menu {page} />
-			<div>
-				<h1 class="text-8xl font-oswald mb-8 drop-shadow-xl">Fredrik Johansson</h1>
+			<div class="p-4">
+				<h1 class="text-6xl sm:text-8xl font-oswald mb-8 drop-shadow-xl">Fredrik Johansson</h1>
 				<div class="flex gap-x-4">
 					<a
-						class={`h-24 w-24 drop-shadow-xl transition duration-300 ease-in-out ${getHoverColor(
+						class={`h-16 w-16 sm:h-24 sm:w-24 drop-shadow-xl transition duration-300 ease-in-out ${getHoverColor(
 							page
 						)}`}
 						href="https://github.com/FredrikErikJohansson"
@@ -50,7 +50,7 @@
 						rel="noopener noreferrer"><FaGithub /></a
 					>
 					<a
-						class={`h-24 w-24 drop-shadow-xl transition duration-300 ease-in-out ${getHoverColor(
+						class={`h-16 w-16 sm:h-24 sm:w-24 drop-shadow-xl transition duration-300 ease-in-out ${getHoverColor(
 							page
 						)}`}
 						href="https://www.linkedin.com/in/fredrik-johansson-66364a179/"

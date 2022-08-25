@@ -18,7 +18,7 @@
 </div>
 
 <div class={`${getTextColor(PROJECTS)} bg-projects-secondary`}>
-	<div class="container mx-auto py-20 px-20">
+	<div class="container mx-auto py-20 px-4">
 		<div class="flex gap-x-1 font-lato text-black text-sm">
 			<a class="underline" href="/projects">Projects</a>
 			<h6>></h6>

@@ -14,7 +14,7 @@
 <div class="flex flex-col min-h-[100vh]">
 	<Header page={ABOUT} />
 	<div class={`${getTextColor(ABOUT)} bg-about-secondary grow`}>
-		<div class="container mx-auto py-20 px-20">
+		<div class="container mx-auto py-20 px-4">
 			<h1 class="text-4xl font-oswald mb-4">About me</h1>
 			<p class="text-base font-lato">
 				My name is Fredrik and I am a software engineer currently working as an consultant. I enjoy

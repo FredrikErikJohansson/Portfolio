@@ -22,7 +22,7 @@
 <div class="flex flex-col min-h-[100vh]">
 	<Header page={PROJECTS} />
 	<div class={`${getTextColor(PROJECTS)} bg-projects-secondary grow`}>
-		<div class="container mx-auto py-20 px-20">
+		<div class="container mx-auto py-20 px-4">
 			<h1 class="text-4xl font-oswald mb-4">Projects</h1>
 			<p class="text-base font-lato">
 				Here is a list of my academic and personal projects sorted by date.
