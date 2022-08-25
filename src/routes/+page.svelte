@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Card from '$lib/Card.svelte';
+	import Card from '$lib/components/Card.svelte';
 
 	import { INTRO } from '$lib/constants/constants';
-	import Footer from '$lib/Footer.svelte';
-	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Header.svelte';
 	import { getTextColor } from '$lib/utility/utility';
 	import { projects, type Project } from '$lib/assets/projects';
 

@@ -2,9 +2,9 @@
 	import { page } from '$app/stores';
 	import type { Project } from '$lib/assets/projects';
 	import { PROJECTS } from '$lib/constants/constants';
-	import Footer from '$lib/Footer.svelte';
-	import Menu from '$lib/Menu.svelte';
-	import Tag from '$lib/Tag.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import Menu from '$lib/components/Menu.svelte';
+	import Tag from '$lib/components/Tag.svelte';
 	import { getBackgroundColor, getTextColor } from '$lib/utility/utility';
 	import { Vimeo } from 'sveltekit-embed';
 

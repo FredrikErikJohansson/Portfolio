@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { ABOUT, BASIC, MASTER } from '$lib/constants/constants';
-	import Header from '$lib/Header.svelte';
+	import Header from '$lib/components/Header.svelte';
 	import { courses } from '$lib/assets/courses';
 	import type { Course } from '$lib/assets/courses';
 	import { getTextColor } from '$lib/utility/utility';
-	import Footer from '$lib/Footer.svelte';
-	import CourseItem from '$lib/CourseItem.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import CourseItem from '$lib/components/CourseItem.svelte';
 
 	const masterCourses: Course[] = courses.filter((course) => course.level === MASTER);
 	const basicCourses: Course[] = courses.filter((course) => course.level === BASIC);

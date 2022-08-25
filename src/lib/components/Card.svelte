@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PROJECTS } from './constants/constants';
+	import { PROJECTS } from '$lib/constants/constants';
 
 	export let src: string;
 	export let alt: string;

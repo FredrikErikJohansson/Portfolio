@@ -3,10 +3,10 @@
 	import type { Project } from '$lib/assets/projects';
 
 	import { PROJECTS } from '$lib/constants/constants';
-	import Footer from '$lib/Footer.svelte';
-	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Header.svelte';
 	import { getTextColor } from '$lib/utility/utility';
-	import Card from '$lib/Card.svelte';
+	import Card from '$lib/components/Card.svelte';
 
 	const projectsSorted: Project[] = projects.sort((a, b) => {
 		if (a.year < b.year) {

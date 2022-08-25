@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { getBackgroundColor, getTextColor } from './utility/utility';
 	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
 	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
+	import { getBackgroundColor, getTextColor } from '$lib/utility/utility';
 	export let page: string;
 </script>
 

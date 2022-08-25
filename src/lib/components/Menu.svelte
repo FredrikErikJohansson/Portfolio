@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ABOUT, INTRO, PROJECTS } from './constants/constants';
+	import { ABOUT, INTRO, PROJECTS } from '$lib/constants/constants';
 
 	export let page: string;
 
@@ -10,7 +10,7 @@
 </script>
 
 <div class="p-10 flex justify-between w-full max-w-xs font-oswald text-2xl">
-	<a class={`${selectedLinkColor(INTRO)}`} href="/">Intro</a>
-	<a class={`${selectedLinkColor(ABOUT)}`} href="/about">About</a>
-	<a class={`${selectedLinkColor(PROJECTS)}`} href="/projects">Projects</a>
+	<a class={`${selectedLinkColor(INTRO)} hover:underline`} href="/">Intro</a>
+	<a class={`${selectedLinkColor(ABOUT)} hover:underline`} href="/about">About</a>
+	<a class={`${selectedLinkColor(PROJECTS)} hover:underline`} href="/projects">Projects</a>
 </div>
