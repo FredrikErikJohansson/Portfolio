@@ -10,9 +10,8 @@ const config = {
 	}),
 
 	kit: {
-		adapter: adapter({
-			fallback: 'index.html'
-		}),
+		adapter: adapter(),
+		prerender: { default: true },
 		appDir: 'internal'
 	}
 };
