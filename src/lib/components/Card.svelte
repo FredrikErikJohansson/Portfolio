@@ -7,7 +7,7 @@
 
 	const getHoverColor = (page: string) => {
 		if (page === PROJECTS) return 'text-projects-bright';
-		else return 'text-intro-secondary';
+		else return 'text-intro-bright';
 	};
 </script>
 

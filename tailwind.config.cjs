@@ -8,8 +8,9 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				'intro-primary': '#DB734F',
-				'intro-secondary': '#DE7E5D',
+				'intro-primary': '#F86449',
+				'intro-secondary': '#F97057',
+				'intro-bright': '#FF5738',
 				'about-primary': '#F4D54C',
 				'about-secondary': '#F5D95D',
 				'projects-primary': '#3D8F5A',

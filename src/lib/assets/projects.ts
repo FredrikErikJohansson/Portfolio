@@ -18,14 +18,15 @@ export const projects: Project[] = [
 		id: '1',
 		title: "Master's thesis",
 		shortDescription: "Master's thesis project.",
-		longDescription: '',
+		longDescription:
+			'Master thesis project that aims to evaluate and compare VI-SLAM methods for UAV-imagery at Maxar Technologies.',
 		sourceLink: 'https://github.com/FredrikErikJohansson/VI-SLAM-UAV',
 		imageSource: '/images/MT.png',
 		resultImages: [],
 		vimeoId: undefined,
-		reportSource: undefined,
+		reportSource: 'https://www.diva-portal.org/smash/get/diva2:1575660/FULLTEXT01.pdf',
 		features: [],
-		technologies: [],
+		technologies: ['C++', 'Python', 'Shell'],
 		year: 2021
 	},
 	{

@@ -51,13 +51,16 @@
 				>
 			{/if}
 		</div>
-		<div class="h-6" />
-		<h1 class="text-2xl font-oswald mb-2">Features</h1>
-		<div class="flex flex-wrap">
-			{#each currentProject.features as feature}
-				<Tag title={feature} />
-			{/each}
-		</div>
+		{#if currentProject.features.length > 0}
+			<div class="h-6" />
+			<h1 class="text-2xl font-oswald mb-2">Features</h1>
+			<div class="flex flex-wrap">
+				{#each currentProject.features as feature}
+					<Tag title={feature} />
+				{/each}
+			</div>
+		{/if}
+
 		<div class="h-6" />
 		<h1 class="text-2xl font-oswald mb-2">Technologies</h1>
 		<div class="flex flex-wrap">
